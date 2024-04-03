@@ -13,7 +13,7 @@ df = pd.DataFrame(data)
 # print(df.isna().sum())
 
 reg = LinearRegression()
-reg.fit(df[["Year","Kilometers"]], df['Price'])
+reg.fit(df[["Year","Kilometers"]], df['Price']) #[[Independent Variable]],[Dependent Variable]
 
 
 print("----- Only Volkswagen Polo -----")

@@ -41,7 +41,7 @@ df.Price = df.Price.fillna(median_price)
 # print(df)
 
 reg = LinearRegression()
-reg.fit(df[["Mileage"]], df["Price"])
+reg.fit(df[["Mileage"]], df["Price"])  #[[Independent Variable]],[Dependent Variable]
 
 #plotting regression line
 plt.scatter(df["Mileage"],df["Price"], color='red', marker='+')

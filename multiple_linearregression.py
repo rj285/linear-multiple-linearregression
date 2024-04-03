@@ -33,7 +33,7 @@ df.Bedrooms = df.Bedrooms.fillna(median_bedroom)
 
 #Linearregression
 reg = LinearRegression()
-reg.fit(df[["Area","Bedrooms","Age"]],df["Price"]) #[[dependent variable]],[independent variable]
+reg.fit(df[["Area","Bedrooms","Age"]],df["Price"]) #[[Independent Variable]],[Dependent Variable]
 
 #plotting regression line
 plt.scatter(df["Area"],df["Price"], color='red', marker='+')

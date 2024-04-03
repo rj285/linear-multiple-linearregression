@@ -35,7 +35,7 @@ df.Price = df.Price.fillna(median_price)
 # print(df)
 
 reg = LinearRegression()
-reg.fit(df[["Petrol_Charge","Road_Tax","Kilometers_Traveled"]], df['Price'])
+reg.fit(df[["Petrol_Charge","Road_Tax","Kilometers_Traveled"]], df['Price'])    #[[Independent Variable]],[Dependent Variable]
 
 print("______PRICE PREDICTION OF RICE______")
 PC = float(input("Enter the Petrol price:- "))

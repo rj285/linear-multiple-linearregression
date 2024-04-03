@@ -20,7 +20,7 @@ plt.savefig("LR-OP/LR(1_data_plotting).png")
 
 #filtering linearregression model
 reg = LinearRegression()
-reg.fit(df[["Area"]],df["Price"]) #[[dependent variable]],[independent variable]
+reg.fit(df[["Area"]],df["Price"]) #[[Independent Variable]],[Dependent Variable]  Independent Variable: Area    Dependent Variable: Price
 
 # Plotting regression line
 plt.scatter(df["Area"], df["Price"], color='red', marker='+')
